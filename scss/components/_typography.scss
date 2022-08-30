@@ -43,7 +43,7 @@
 }
 
 // display-3
-.display-3 {
+.display-3 {    
   font-family: "Poppins", sans-serif;
 
   &--title {
@@ -56,8 +56,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @include media-breakpoint-up(lg){
-        font-size: 1.8rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
     }
   }
 }
@@ -66,4 +66,13 @@
 .border-right {
   border-right: 0.1rem solid $gray-300;
   height: 100%;
+}
+
+// gradient bg
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
 }
