@@ -1,3 +1,4 @@
+// gradient mixins
 @mixin gradient {
   background: linear-gradient(
     to right,
@@ -6,9 +7,16 @@
   );
 }
 
+// absolute mixins
 @mixin absoluteCenter {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+// transition mixins
+@mixin transitionProperty {
+    transition-duration: 1000ms;
+    transition-property: all;
 }
